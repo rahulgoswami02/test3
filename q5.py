@@ -1,18 +1,14 @@
-class Book:
-    def insert_price(self):
-        n = int(input("Enter number of books: "))
-        prices = []
+n = int(input("Enter number of books: "))
+prices = []
 
-        for i in range(n):
-            prices.append(float(input("Enter book price: ")))
+for i in range(n):
+    prices.append(float(input("Enter book price: ")))
 
-        prices.sort()
-        new_price = float(input("Enter new book price: "))
+prices.sort()
 
-        prices.append(new_price)
-        prices.sort()
+new_price = float(input("Enter new book price: "))
 
-        print("Book prices after insertion:", prices)
+prices.append(new_price)
+prices.sort()
 
-b = Book()
-b.insert_price()
+print("Book prices after insertion:", prices)
