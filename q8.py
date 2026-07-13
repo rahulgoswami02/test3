@@ -7,7 +7,7 @@ class Hospital:
             priority = int(input("Enter priority for Patient" + str(i + 1) + ": "))
             patients.append(["Patient" + str(i + 1), priority])
 
-        priority.sort(reverse=True)
+        patients.sort(reverse=True)
 
         print("Emergency Queue:")
 
