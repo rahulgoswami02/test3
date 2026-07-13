@@ -1,26 +1,10 @@
-# roll_numbers = [101, 102, 105, 110, 115, 120]
+roll_numbers = [101, 102, 105, 110, 115, 120]
 
-# roll = int(input("Enter roll number: "))
+roll = int(input("Enter roll number: "))
 
-# for i in range(len(roll_numbers)):
-#     if roll_numbers[i] == roll:
-#         print("Student found at position", i + 1)
-#         break
-# else:
-#     print("Student Not Found")
-
-class Student:
-    def search_roll(self):
-        roll_numbers = [101, 102, 105, 110, 115, 120]
-
-        roll = int(input("Search roll number: "))
-
-        for i in range(len(roll_numbers)):
-            if roll_numbers[i] == roll:
-                print("Student found at position", i + 1)
-                break
-        else:
-            print("Student Not Found")
-
-s = Student()
-s.search_roll()
+for i in range(len(roll_numbers)):
+    if roll_numbers[i] == roll:
+        print("Student found at position", i + 1)
+        break
+else:
+    print("Student Not Found")
